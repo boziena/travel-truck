@@ -1,0 +1,74 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.review {
+  padding: 16px;
+  background: #f7f7f7;
+  border-radius: 16px;
+  width: 623px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.review:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #101828;
+  flex-shrink: 0;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #101828;
+  margin-bottom: 4px;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+}
+
+.starFilled {
+  color: #ffc531;
+  font-size: 16px;
+}
+
+.starEmpty {
+  color: #d0d5dd;
+  font-size: 16px;
+}
+
+.comment {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #475467;
+}

@@ -1,0 +1,86 @@
+.wrapper {
+  width: 638px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainSwiper {
+  width: 638px;
+  height: 505px;
+  border-radius: 17px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.mainImage {
+  width: 638px;
+  height: 505px;
+  object-fit: cover;
+  display: block;
+}
+
+.thumbsSwiper {
+  width: 100%;
+}
+.thumbsWrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.thumbImage {
+  width: 136px;
+  height: 144px;
+  object-fit: cover;
+  border-radius: 16px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+  border: 3px solid transparent;
+  flex-shrink: 0;
+  transition:
+    transform 0.2s,
+    opacity 0.2s,
+    border 0.2s;
+}
+
+.thumbImage:hover {
+  transform: scale(1.05);
+}
+
+.thumbActive {
+  opacity: 1;
+  border: 3px solid #829b91;
+}
+
+.thumbsSwiper .swiper-slide {
+  cursor: pointer;
+}
+
+:global(.swiper-slide-thumb-active) .thumbImage {
+  opacity: 1;
+}
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+:global(.swiper-button-next::after),
+:global(.swiper-button-prev::after) {
+  font-size: 14px;
+}
+.thumbsWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.thumbActive {
+  opacity: 1 !important;
+  outline: 2px solid #829b91;
+}
